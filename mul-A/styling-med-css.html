@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Styling med CSS</title>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <!-- Internt stylesheet -->
+        <style>
+            /* selector - property - value */
+            h1 {
+                color: blue;
+                font-family: 'Amatic SC', cursive;
+                font-size: 50px;
+                letter-spacing: -1px;
+                border: 2px solid #333;
+                /* top - right - bottom - left */
+                padding: 30px 25px 18px 32px;
+                margin-top: 70px;
+            }
+            p {
+                font-family: georgia, serif;
+                font-weight: bold;
+                font-style: italic;
+                /* "em" er en relativ måleenhed */
+                font-size: 1.2em;
+                text-align: justify;
+                line-height: 138%;
+                text-transform: uppercase;
+                max-width: 600px;
+            }
+            body {
+                background-color: #ffffcc;
+                /*background-image: url("fisk.jpeg");*/
+                background-repeat: no-repeat;
+                /*background-position: 50% 200px;*/
+                background-size: cover;
+            }
+            a {
+                color: orange;
+                text-decoration: none;
+                padding-left: 14px;
+            }
+            a:link {
+                color: blue;
+            }
+            a:visited {
+                color: brown;
+            }
+            a:hover {
+                background-color: pink;
+            }
+            a:active {
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Nedenstående kaldes for "inline styling" -->
+        <h1 style="color: red;">Min fine overskrift</h1>
+        <p style="color: green;">Her kommer lidt tekst, som jeg selv har fundet på.</p>
+        <h1>Min anden overskrift</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure nesciunt unde dicta rerum labore ex ipsum aliquid a dolor <a href="http://cphbusiness.dk" target="_blank">iste expedita tempore</a>, ab officia autem nihil distinctio et eaque possimus magnam perferendis. Cumque, libero, ea saepe est impedit placeat inventore illo labore esse amet repudiandae quia eligendi culpa nemo?</p>
+    </body>
+</html>
