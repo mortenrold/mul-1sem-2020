@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- link til Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <title>Styling med CSS</title>
+        <meta charset="utf-8">
+        <!-- "internt stylesheet" -->
+        <style>
+            h1 {
+                color: blue;
+                font-family: satisfy, arial, sans-serif;
+                font-size: 50px;
+                letter-spacing: -1px;
+                border: 2px solid gray;
+                /* fire forskellige forver på border (top, højre, bund, venstre) */
+                border-color: black red yellow green;
+                padding-left: 30px;
+                padding-top: 80px;
+                /* her gør jeg baggrundsfarven gennemsigtig */
+                background-color: rgba(221, 221, 221, 0.5);
+                /* margin på alle fire sider: top - right - bottom - left */
+                margin: 40px 30px 17px 61px;
+            }
+            body {
+                background-color: #e6ffff;
+                background-image: url("is.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0;
+            }
+            p {
+                font-family: georgia, serif;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 120%;
+                text-align: justify;
+                /*text-decoration: underline;*/
+                line-height: 135%;
+                text-transform: uppercase;
+                max-width: 500px;
+            }
+            a {
+                color: orange;
+            }
+            a:link {
+                color: white;
+            }
+            a:visited {
+                color: cyan;
+            }
+            a:hover {
+                color: yellow;
+                letter-spacing: 5px;
+            }
+            a:active {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Dette kaldes "inline styling" -->
+        <h1 style="color: red;">Min fine overskrift</h1>
+        <p style="color: green;">Her kommer lidt tekst, som jeg selv har fundet på.</p>
+        <h1>Min anden overskrift</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus, ea voluptatem asperiores voluptas <a href="http://cphbusiness.dk">cumque molestiae</a>. Impedit aut, vel illum minus reiciendis qui blanditiis quas, quisquam fugit dolor, rem excepturi unde iusto harum in architecto esse dolore ratione deserunt eveniet? <a href="http://sjdhgfjhsdgfjhsdgfjhsdgfj.dk">Hej</a>Fuga tempora quibusdam aperiam nam quo possimus nesciunt soluta quasi.</p>
+    </body>
+</html>
