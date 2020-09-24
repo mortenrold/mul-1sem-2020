@@ -1,0 +1,67 @@
+h1 {
+    color: red;
+}
+/* # peger på et ID */
+#alt-overskrift {
+    color: pink;
+}
+.fire-ben {
+    color: green;
+}
+.to-ben {
+    color: blue;
+}
+.listetekst {
+    color: black;
+}
+/* float er gammeldags - brug en smartere metode */
+.container-1 {
+    background-color: #bbb;
+    width: 400px;
+    float: left;
+    z-index: 1;
+}
+.container-2 {
+    background-color: lightblue;
+    width: 400px;
+    float: left;
+    position: fixed;
+    top: 40px;
+    left: 87px;
+    padding: 30px;
+    z-index: -1;
+}
+
+/* Layout med flexbox */
+.flex-container {
+    /* når vi skriver "display: flex;" på en div, bliver den til en "flex-container" og dens "børn" begynder at opføre sig som "flex-items" */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header, .sidebar, .content, .banner, .footer {
+    background-color: #999;
+}
+.header {
+    width: 100%;
+    margin-top: 10px;
+    height: 60px;
+    /* med "order" kan jeg ændre rækkefølgen på elementerne */
+    order: 1;
+}
+.sidebar {
+    width: 19%;
+}
+.content {
+    width: 49%;
+    height: 500px;
+}
+.banner {
+    width: 29%;
+}
+.footer {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 60px;
+    order: -1;
+}
