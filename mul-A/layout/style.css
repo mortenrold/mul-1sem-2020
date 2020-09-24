@@ -1,0 +1,72 @@
+h1 {
+    color: red;
+}
+#alt-overskrift {
+    color: cornflowerblue;
+}
+.fire-ben {
+    color: purple;
+}
+.aegdyr {
+    color: green;
+}
+.highlight {
+    background-color: yellow;
+}
+/* her styler jeg de span-tags, der er "børn" af p (men ikke "børnebørn") */
+p>span {
+    font-weight: bold;
+}
+.kasse-1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 400px;
+    position: fixed;
+    /* float er gammeldags - brug flexbox i stedet :) */
+    /* float: left; */
+}
+.kasse-2 {
+    background-color: lightcoral;
+    padding: 20px;
+    height: 400px;
+    width: 400px;
+    /* float: left; */
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    z-index: -1;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: 400px;
+}
+.header, .sidebar, .content, .banner, .footer {
+    border: 1px solid #666;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    /* Ændre rækkefølge, så footer bliver placeret efter de andre elementer */
+    order: 1;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    /* Ændre rækkefølge, så footer bliver placeret før de andre elementer */
+    order: -1;
+}
+.sidebar {
+    width: 24%;
+}
+.content {
+    width: 49%;
+    height: 400px;
+}
+.banner {
+    width: 24%;
+}
